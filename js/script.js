@@ -132,7 +132,6 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 
      const modalTimerId = setTimeout(openModal, 50000);
-    // Закомментировал, чтобы не отвлекало
 
     function showModalByScroll() {
         if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight) {
@@ -141,8 +140,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     }
     window.addEventListener('scroll', showModalByScroll);
-
-    // Используем классы для создание карточек меню
 
     class MenuCard {
         constructor(src, alt, title, descr, price, parentSelector, ...classes) {
